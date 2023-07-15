@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <>
             <div className="div_text">
-                <h3 className="animated-letter">
+                <h1 className="animated-letter">
                     <h4 className="animated-letter" id="A">A</h4>
                     <h4 className="animated-letter" id="N" >N</h4>
                     <h4 className="animated-letter" id="S">S</h4>
@@ -13,7 +13,7 @@ const Home = () => {
                     <h4 className="animated-letter" id="O">O</h4>
                     <h4 className="animated-letter" id="L">L</h4>
                     <h4 className="animated-letter" id="L2">L</h4>
-                </h3>
+                </h1>
             </div>
 
             <div className="div_logos">
@@ -33,6 +33,7 @@ const Home = () => {
                 <a href="https://github.com/ansaroll" target="_blank" rel="noreferrer">
                     <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="github" />
                 </a>
+                
             </div>
         </>
     )

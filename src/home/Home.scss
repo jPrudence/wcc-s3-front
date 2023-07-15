@@ -10,6 +10,21 @@ $rollandColor: rgb(255, 229, 183);
   transition: all 0.5s ease-in-out;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  h4 {
+    padding-inline: 20px;
+  }
+  &:hover {
+    font-size: 20px;
+    top: 10px;
+    cursor: url("https://img.icons8.com/fluent/48/000000/zoom-out.png"), auto;
+  }
+}
+
 .div_logos,
 .div_text {
   display: flex;
@@ -27,6 +42,11 @@ $rollandColor: rgb(255, 229, 183);
   z-index: 100;
   a {
     margin: 10px;
+    cursor: url("../../public/assets/cursor.png"), auto;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
