@@ -1,0 +1,229 @@
+// declare variable color
+$andrianiainaColor: rgb(93, 93, 255);
+$sahobisoaColor: rgb(41, 245, 99);
+$rollandColor: rgb(255, 229, 183);
+
+.animated-letter {
+  color: bisque;
+  animation: bounce 4s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  transition: all 0.5s ease-in-out;
+}
+
+// decalre a common style for all letter
+
+#N,
+#A {
+  color: $andrianiainaColor;
+}
+#S:hover,
+#R:hover,
+#O:hover,
+#L:hover,
+#L2:hover,
+#N:hover,
+#A2:hover,
+#A:hover {
+  transition: all 0.5s ease-in-out;
+  font-size: 100px;
+  position: absloute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#A:hover {
+  &:after {
+    content: "NDRIANIAINA";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $rollandColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#N:hover {
+  &:after {
+    content: "DRIANIAINA";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $rollandColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "A";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $rollandColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#S,
+#A2 {
+  color: $sahobisoaColor;
+}
+
+#S:hover {
+  &:after {
+    content: "AHOBISOA";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $andrianiainaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#A2:hover {
+  &:after {
+    content: "HOBISOA";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $andrianiainaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "S";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $andrianiainaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#R,
+#O,
+#L,
+#L2 {
+  color: $rollandColor;
+}
+
+#R:hover {
+  &:after {
+    content: "OLLAND";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#O:hover {
+  &:after {
+    content: "LLAND";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "R";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#L:hover {
+  &:after {
+    content: "LAND";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+    &:before {
+        content: "RO";
+        transition: all 0.5s ease-in-out;
+        animation: zoom 2s ease-in-out linear;
+        color: $sahobisoaColor;
+        position: absloute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+#L2:hover {
+  &:after {
+    content: "AND";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "ROL";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    font-size: 10px;
+  }
+
+  25% {
+    font-size: 50px;
+  }
+
+  100% {
+    font-size: 100px;
+  }
+}
