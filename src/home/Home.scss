@@ -10,7 +10,29 @@ $rollandColor: rgb(255, 229, 183);
   transition: all 0.5s ease-in-out;
 }
 
-// decalre a common style for all letter
+.div_logos,
+.div_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.div_logos {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 100;
+  a {
+    margin: 10px;
+  }
+}
+
+.animated-letter:hover {
+  line-height: 0.3;
+}
 
 #N,
 #A {
@@ -30,6 +52,7 @@ $rollandColor: rgb(255, 229, 183);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 1.5;
 }
 
 #A:hover {
@@ -42,6 +65,17 @@ $rollandColor: rgb(255, 229, 183);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &:before {
+    content: "Développeur Web";
+    position: absolute;
+    top: 170%;
+    left: 52%;
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    transform: translate(-50%, -50%);
+    color: $sahobisoaColor;
   }
 }
 
@@ -83,6 +117,17 @@ $rollandColor: rgb(255, 229, 183);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  &:before {
+    content: "034 95 127 77";
+    position: absolute;
+    white-space: nowrap;
+    top: 140%;
+    left: 67%;
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    transform: translate(-50%, -50%);
+    color: $rollandColor;
   }
 }
 
@@ -127,6 +172,17 @@ $rollandColor: rgb(255, 229, 183);
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  &:before {
+    content: "WCC FRONT";
+    position: absolute;
+    white-space: nowrap;
+    top: 140%;
+    left: 80%;
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    transform: translate(-50%, -50%);
+    color: $rollandColor;
+  }
 }
 
 #O:hover {
@@ -164,17 +220,16 @@ $rollandColor: rgb(255, 229, 183);
     transform: translate(-50%, -50%);
   }
 
-    &:before {
-        content: "RO";
-        transition: all 0.5s ease-in-out;
-        animation: zoom 2s ease-in-out linear;
-        color: $sahobisoaColor;
-        position: absloute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
+  &:before {
+    content: "RO";
+    transition: all 0.5s ease-in-out;
+    animation: zoom 2s ease-in-out linear;
+    color: $sahobisoaColor;
+    position: absloute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #L2:hover {
